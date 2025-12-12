@@ -1,10 +1,8 @@
-package guipoject;
+package PL_Project;
 
-import usermanagement.User;
-import usermanagement.UserDBHelper;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 public class ManagePanel extends javax.swing.JPanel {
 
@@ -149,6 +147,7 @@ public class ManagePanel extends javax.swing.JPanel {
 
         txtId.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtId.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtIdActionPerformed(evt);
             }
@@ -162,6 +161,7 @@ public class ManagePanel extends javax.swing.JPanel {
 
         txtPass.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         txtPass.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPassActionPerformed(evt);
             }
@@ -183,6 +183,7 @@ public class ManagePanel extends javax.swing.JPanel {
         btnAdd.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
@@ -191,6 +192,7 @@ public class ManagePanel extends javax.swing.JPanel {
         btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
@@ -199,6 +201,7 @@ public class ManagePanel extends javax.swing.JPanel {
         btnDelete.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }

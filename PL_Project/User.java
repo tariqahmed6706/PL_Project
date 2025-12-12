@@ -1,4 +1,4 @@
-package usermanagement;
+package PL_Project;
 
 public class User {
     private String id;

@@ -1,8 +1,7 @@
-package guipoject;
+package PL_Project;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.JOptionPane; 
-import javax.swing.JPanel;
 
 /**
  *
@@ -37,6 +36,7 @@ public class CustomerPanel extends javax.swing.JPanel {
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
@@ -45,6 +45,7 @@ public class CustomerPanel extends javax.swing.JPanel {
         jButton6.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton6.setText("give me ticket");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }

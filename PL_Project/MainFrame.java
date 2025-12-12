@@ -1,9 +1,4 @@
-package guipoject;
-
-import static com.sun.tools.javac.Main.main;
-import static guipoject.MainFrame.main;
-import static guipoject.ProjectJFrame.main;
-import java.awt.PopupMenu;
+package PL_Project;
 
 /**
  *
@@ -14,7 +9,7 @@ public class MainFrame extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainFrame.class.getName());
 
     CustomerPanel a = new CustomerPanel();
-    Monitorpanel b = new Monitorpanel();
+    // Monitorpanel b = new Monitorpanel();
     ManagePanel c = new ManagePanel();
 
     public MainFrame() {
@@ -23,10 +18,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         // 2. ضيف الصفحات جوة الـ bodyPanel
         bodyPanel.add(a, "cardA"); // صفحة العملاء
-        bodyPanel.add(b, "cardB"); // صفحة المراقبة
+        // bodyPanel.add(b, "cardB"); // صفحة المراقبة
         bodyPanel.add(c, "cardC");
         // ده هيخلي الـ bodyPanel يفرش في الشاشة كلها
-       this.add(bodyPanel, java.awt.BorderLayout.CENTER);
+        this.add(bodyPanel, java.awt.BorderLayout.CENTER);
 
         this.getContentPane().setBackground(new java.awt.Color(206, 214, 224));
     }
@@ -83,6 +78,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnEntry.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnEntry.setText("Customer Entry");
         btnEntry.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEntryActionPerformed(evt);
             }
@@ -91,6 +87,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnMonitor.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnMonitor.setText("Live Monitor");
         btnMonitor.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMonitorActionPerformed(evt);
             }
@@ -99,6 +96,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnExit.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnExit.setText("Payment");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
             }
@@ -107,6 +105,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnUsers.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnUsers.setText("Management");
         btnUsers.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUsersActionPerformed(evt);
             }
@@ -118,6 +117,7 @@ public class MainFrame extends javax.swing.JFrame {
         btnLogout.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogoutActionPerformed(evt);
             }
